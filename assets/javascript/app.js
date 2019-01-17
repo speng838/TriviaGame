@@ -29,7 +29,11 @@
     
 $("#start").on("click",  function(){
     
-    timerId = setInterval(countdown, 1000);
+    theTime1();
+});
+
+function theTime1(){
+timerId = setInterval(countdown, 1000);
     $("#main").hide();
     $("#main2").show();
      
@@ -49,7 +53,7 @@ $("#start").on("click",  function(){
         timeLeft--;
         }
     }
-});
+}
 
     function theTime2(){
     timerId = setInterval(countdown, 1000);
@@ -459,7 +463,7 @@ function testing(){
         resultPage7();
     });
 //8======================================================================================
-    $("#six").on("click",function(){
+    $("#seven").on("click",function(){
         clearInterval(timerId); //stops the time from moving any further
         $("#main9").hide();
         $("#answer8").show();
